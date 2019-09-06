@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style>
+            table,th,td {
+                border: 2px solid black;
+            }
+        </style>
+        <link rel="styles" href="styles.css">
+    </head>
+    <body>
+        <a action="/" method="GET" href="/">Home</a>
+        <a action="/newtask" method="GET" href="/newTask">Add Task</a>
+        <h1>Task List</h1>
+        </br>
+        <h3>The task you wanted are
+            <table>
+                <tr>
+                    <td>TaskName</td>
+                    <td>TaskDate</td>
+                    <td>TaskDesc</td>
+                </tr>
+                <% for ( var i =0; i < taskDb.length;i++){ %>
+                    <tr>
+                        <td>
+                            <%= taskDb[i].taskName %>
+                        </td>
+                        <td>
+                            <%= taskDb[i].taskDate %>
+                        </td>
+                        <td>
+                            <%= taskDb[i].taskDesc %>
+                        </td>
+                    </tr>
+                <% }%>
+        </h3>
+    </body>
+    </html>

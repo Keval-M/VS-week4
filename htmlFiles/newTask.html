@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+            <link rel="styles" href="styles.css">
+    </head>
+
+    <body>
+        <a action="/listTask" method="GET" href="/ListTask">List Tasks</a>
+        <a action="/" method="GET" href="/">Home</a>
+        <form action='/newTask' method='POST'>
+
+            <label>Task Name:</label></br>
+            <input type="text" name="tTask"></br>
+
+            <label>Task Due:</label></br>
+            <input type="text" name="tDate"></br>
+
+            <label>Task Desc:</label></br>
+            <input type="text" name="tDesc"></br>
+
+            <input type="submit" name="submit"/>
+
+        </form>
+
+    </body>
+
+</html>
